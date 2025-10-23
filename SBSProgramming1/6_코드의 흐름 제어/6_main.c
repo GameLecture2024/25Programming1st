@@ -1,8 +1,10 @@
 // 가위 바위 보
 // 실습 목표 : 다른 미니 게임 직접 설계하고 코드를 작성해보는 것
-
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdbool.h>
+#include <stdlib.h>
+#include <time.h>
 // (1)가위 바위 보 게임을 한글로 표현해보세요
 // - 유저, 컴퓨터, 
 // 가위,바위,보 중에서 하나를 선택해주세요.
@@ -43,6 +45,7 @@
 *  -> 당장 구현할 수 있는 순위
 */
 
+
 int main()
 {
 	// 조건문 출력 테스트
@@ -72,108 +75,146 @@ int main()
 
 	// 플레이어가 선택한 결과를 저장
 	// 1. 가위 2. 바위 3. 보 (임의의 약속)
+
+/*
+*  가위 바위 보 숫자를 scanf를 사용해서 입력 받아보세요.
+*  가위 바위 보 로직을 반복문으로 감싸는 작업 하기.
+*  입력이외의 값을 넘었을 때 버그를 수정해보세요.
+*  (★) 여러분만의 가위 바위 보 특색을 위한 특별한 코드를 생각 + 구현해보세요
+*/
+
 	int playerChoice = 1; // 플레이어는 가위를 선택했습니다.
 	int computerChoice = 1; // 컴퓨터도 가위를 선택했습니다.
 	int playerScore = 0; 
 	int computerScore = 0;
-
-	// 가위 -> 이겼다, 비겼다, 졌다.
-	// 조건 - 가위->보  "1"->"3"
-	// 조건 - 가위->가위 "1"->"1"
-	// 조건 - 가위->바위 "1"->"2"
-	if (playerChoice == 1 && computerChoice == 3)
-	{
-		// 실제로 유저의 점수를 1점 증가시키는 것 -> playerScore
-		playerScore = playerScore + 1;
-		printf("유저가 승리했습니다\n");
-	}	
-	else if (playerChoice == 1 && computerChoice == 1)
-	{
-		printf("유저가 비겼습니다.\n");
-	}
-	else if (playerChoice == 1 && computerChoice == 2)
-	{
-		computerScore = computerScore + 1;
-		printf("유저가 패배했습니다.\n");
-	}
-	else {
-		// computerChoice값이 0보다 작거나 같거나, 3보다 큰 경우
-		if(computerChoice <= 0 && computerChoice > 3)
-			printf("예외가 발생했습니다.\n");
-	}
-	
-	// 플레이어가 바위 ->	 2은 1이긴다 3는 2이긴다 1은 3이긴다
-	if (playerChoice == 2 && computerChoice == 1)
-	{
-		playerScore = playerScore + 1;
-		printf("유저가 승리했습니다\n");
-	}
-	else if (playerChoice == 2 && computerChoice == 2)
-	{
-		printf("유저가 비겼습니다.\n");
-	}
-	else if (playerChoice == 2 && computerChoice == 3)
-	{
-		computerScore = computerScore + 1;
-		printf("유저가 패배했습니다.\n");
-	}
-	else {
-		if (computerChoice <= 0 && computerChoice > 3)
-			printf("예외가 발생했습니다.\n");
-	}
-	// 플레이어가 보 ->
-	if (playerChoice == 3 && computerChoice == 1)
-	{
-		computerScore = computerScore + 1;
-		printf("유저가 패배했습니다.\n");
-	}
-	else if (playerChoice == 3 && computerChoice == 2)
-	{
-		playerScore = playerScore + 1;
-		printf("유저가 승리했습니다\n");
-	}
-	else if (playerChoice == 3 && computerChoice == 3)
-	{
-		printf("유저가 비겼습니다.\n");
-	}
-	else
-	{
-		if (computerChoice <= 0 && computerChoice > 3)
-			printf("예외가 발생했습니다.\n");
-	}
-
 	const char* playerCharacter = "가위";		// 문자를 저장할 수 있는 변수
 	const char* computerCharacter = "보";
+	int loopCount = 5;
+	for (int i = 0; i < loopCount; i++)
+	{
+		printf("가위(1) 바위(2) 보(3) 해당하는 숫자를 입력해주세요. \n");
+		// 다른 숫자를 입력하면 어떻게 해야 하나요? - 잘못된 값을 입력했기 때문에 다시 입력해주세요 - 조건문
+		// 여러분의 아이디어로 어떻게 버그를 해결할지 구현.
+		scanf("%d", &playerChoice);
 
-	if (playerChoice == 1)
-	{
-		playerCharacter = "가위";
-	}
-	else if(playerChoice == 2)
-	{
-		playerCharacter = "바위";
-	}
-	else if (playerChoice == 3)
-	{
-		playerCharacter = "보";
+		srand(time(NULL));   // 컴퓨터의 랜덤 출력 방식
+		computerChoice = rand() % 3 + 1;
+
+		// 가위 -> 이겼다, 비겼다, 졌다.
+		// 조건 - 가위->보  "1"->"3"
+		// 조건 - 가위->가위 "1"->"1"
+		// 조건 - 가위->바위 "1"->"2"
+		if (playerChoice == 1 && computerChoice == 3)
+		{
+			// 실제로 유저의 점수를 1점 증가시키는 것 -> playerScore
+			playerScore = playerScore + 1;
+			printf("유저가 승리했습니다\n");
+		}
+		else if (playerChoice == 1 && computerChoice == 1)
+		{
+			printf("유저가 비겼습니다.\n");
+		}
+		else if (playerChoice == 1 && computerChoice == 2)
+		{
+			computerScore = computerScore + 1;
+			printf("유저가 패배했습니다.\n");
+		}
+		else {
+			// computerChoice값이 0보다 작거나 같거나, 3보다 큰 경우
+			if (computerChoice <= 0 && computerChoice > 3)
+				printf("예외가 발생했습니다.\n");
+		}
+
+		// 플레이어가 바위 ->	 2은 1이긴다 3는 2이긴다 1은 3이긴다
+		if (playerChoice == 2 && computerChoice == 1)
+		{
+			playerScore = playerScore + 1;
+			printf("유저가 승리했습니다\n");
+		}
+		else if (playerChoice == 2 && computerChoice == 2)
+		{
+			printf("유저가 비겼습니다.\n");
+		}
+		else if (playerChoice == 2 && computerChoice == 3)
+		{
+			computerScore = computerScore + 1;
+			printf("유저가 패배했습니다.\n");
+		}
+		else {
+			if (computerChoice <= 0 && computerChoice > 3)
+				printf("예외가 발생했습니다.\n");
+		}
+		// 플레이어가 보 ->
+		if (playerChoice == 3 && computerChoice == 1)
+		{
+			computerScore = computerScore + 1;
+			printf("유저가 패배했습니다.\n");
+		}
+		else if (playerChoice == 3 && computerChoice == 2)
+		{
+			playerScore = playerScore + 1;
+			printf("유저가 승리했습니다\n");
+		}
+		else if (playerChoice == 3 && computerChoice == 3)
+		{
+			printf("유저가 비겼습니다.\n");
+		}
+		else
+		{
+			if (computerChoice <= 0 && computerChoice > 3)
+				printf("예외가 발생했습니다.\n");
+		}
+
+
+		if (playerChoice == 1)
+		{
+			playerCharacter = "가위";
+		}
+		else if (playerChoice == 2)
+		{
+			playerCharacter = "바위";
+		}
+		else if (playerChoice == 3)
+		{
+			playerCharacter = "보";
+		}
+
+		if (computerChoice == 1)
+		{
+			computerCharacter = "가위";
+		}
+		else if (computerChoice == 2)
+		{
+			computerCharacter = "바위";
+		}
+		else if (computerChoice == 3)
+		{
+			computerCharacter = "보";
+		}
+
+		printf("숫자 1은 가위를 뜻합니다. 숫자 2는 바위를 뜻합니다. 숫자 3은 보를 뜻합니다.\n");
+		// 플레이어의 선택 : 가위, 컴퓨터의 선택 : ?  출력
+		printf("플레이어의 선택 : %s , 컴퓨터의 선택 : %s\n", playerCharacter, computerCharacter);
+		// 플레이어의 점수 vs 컴퓨터의 점수 출력
+		printf("플레이어의 점수 : %d vs 컴퓨터의 점수 : %d\n", playerScore, computerScore);
 	}
 
-	if (computerChoice == 1)
-	{
-		computerCharacter = "가위";
-	}
-	else if (computerChoice == 2)
-	{
-		computerCharacter = "바위";
-	}
-	else if (computerChoice == 3)
-	{
-		computerCharacter = "보";
-	}
+	//while(true)
+	//{
+	//	  
+	//    if( 컴퓨터 또는 유저가 목표 점수에 도달했을 때 ) => 코드로 한줄로 표현 "함수"
+	//       break;
+	// 
+	//    // 사람의 표현 방식과 유사하게 코드를 작성하면 => 분석하기 쉽다.
+	//}
 
-	printf("숫자 1은 가위를 뜻합니다. 숫자 2는 바위를 뜻합니다. 숫자 3은 보를 뜻합니다.\n");
-	// 플레이어의 선택 : 가위, 컴퓨터의 선택 : ?  출력
-	printf("플레이어의 선택 : %s , 컴퓨터의 선택 : %s\n", playerCharacter, computerCharacter);
-	// 플레이어의 점수 vs 컴퓨터의 점수 출력
-	printf("플레이어의 점수 : %d vs 컴퓨터의 점수 : %d\n", playerScore , computerScore);
+
 }
+
+/*
+*  개발 이력을 작성해보세요. History
+*  가위,바위,게임
+*  Version 1.0.0 : 가위 바위 보 결과를 출력하는 기능 구현 
+*  Version 1.0.1 : 유저의 입력 기능 구현   +   입력받을 수 없는 숫자를 대입한 경우에 버그가 발생!
+*  
+*/
