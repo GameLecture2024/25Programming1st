@@ -23,6 +23,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "9.코드의 범위", "9.코
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "a10.상수와 열거형", "10.상수와 열거형\10.상수와 열거형.vcxproj", "{D7CD14BC-BD5D-4895-A96F-442BEC45EAFE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "a11.자료형과 배열", "a11.자료형과 배열\a11.자료형과 배열.vcxproj", "{4440AD2F-C6D9-4894-A7B7-4371E3458040}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -111,6 +113,14 @@ Global
 		{D7CD14BC-BD5D-4895-A96F-442BEC45EAFE}.Release|x64.Build.0 = Release|x64
 		{D7CD14BC-BD5D-4895-A96F-442BEC45EAFE}.Release|x86.ActiveCfg = Release|Win32
 		{D7CD14BC-BD5D-4895-A96F-442BEC45EAFE}.Release|x86.Build.0 = Release|Win32
+		{4440AD2F-C6D9-4894-A7B7-4371E3458040}.Debug|x64.ActiveCfg = Debug|x64
+		{4440AD2F-C6D9-4894-A7B7-4371E3458040}.Debug|x64.Build.0 = Debug|x64
+		{4440AD2F-C6D9-4894-A7B7-4371E3458040}.Debug|x86.ActiveCfg = Debug|Win32
+		{4440AD2F-C6D9-4894-A7B7-4371E3458040}.Debug|x86.Build.0 = Debug|Win32
+		{4440AD2F-C6D9-4894-A7B7-4371E3458040}.Release|x64.ActiveCfg = Release|x64
+		{4440AD2F-C6D9-4894-A7B7-4371E3458040}.Release|x64.Build.0 = Release|x64
+		{4440AD2F-C6D9-4894-A7B7-4371E3458040}.Release|x86.ActiveCfg = Release|Win32
+		{4440AD2F-C6D9-4894-A7B7-4371E3458040}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

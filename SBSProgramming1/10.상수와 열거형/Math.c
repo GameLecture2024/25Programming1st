@@ -15,12 +15,11 @@ void Test()
 void Test2()
 {
 	static int number = 1;
-	int result = 0;
-	for (int i = 0; i < 10; i++)
-	{
-		number += i;	//number = number + i; 같다		
-	}
-	result = number;
+	int number2 = 1;
+	number++; // number = number + 1;
+	number2++;
+
+	printf("number의 값 : %d , number2의 값 : %d\n", number, number2);
 }
 
 void CalculateCircleArea()

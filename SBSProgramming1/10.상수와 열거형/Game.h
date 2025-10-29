@@ -3,7 +3,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdbool.h>
-const static int MAPSIZE;
+const static int MAPSIZE = 10;
 //int playerX = 3;
 //int playerY = 5;
 //int MapOriginX;
