@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-
+#include <string.h>
 // 어떤 점이 장점이 되는가?
 // 기존 방식, 새로운 방식 둘다 사용.
 // obsolete : 더이상 쓸모가 없어져서 지원을 안하겠다.
@@ -107,4 +107,19 @@ int main()
 
 	// name 가위  들어있는 내용은 같다.  '가' '위' '\0' => 같다 알려주는 함수  bool IsStrCompare
 
+	// 두개의 문자열에 값을 비교하는 방법? -? strcmp
+
+
+	if (strcmp(name, "가위") > 0)
+	{
+
+	}
+	else if (strcmp(name, "가위") == 0)
+	{
+
+	}
+	else if (strcmp(name, "가위") < 0)
+	{
+
+	}
 }
