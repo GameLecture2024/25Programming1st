@@ -25,6 +25,8 @@ const char WALL = '*';
 
 // 플레이어의 이동을 구현하는 코드 AI 구현해보세요.	C언어에서 windows.h 이동 코드 검색.
 
+void PlayerMove(int* playerX, int* playerY);
+
 int main()
 {
 	// Text로 출력을 해야한다. -> 문자로 이루어져있는 배열
@@ -75,6 +77,18 @@ int main()
 	//Initialize();
 	//Setup();
 
+	int playerX = 5;
+	int playerY = 5;
+
+	int *playerXPtr = &playerX;
+	int *playerYPtr = &playerY;
+
+	// Y의 주소
+
+	PlayerMove(playerXPtr, playerYPtr);
+
+	printf("playerX의 값 : %d\n", playerX);
+
 	//while (1)
 	//{
 	//	// 게임이 실행되는 순서의 로직을 작성해야 한다.
@@ -102,5 +116,24 @@ int main()
 	}
 
 	
+
+}
+
+
+// 플레이어의 이동을 구현했으니깐, 게임이 실행되는 동안에 계속해서 플레이어를 움직이게 하려면 어떻게 해야하는가?
+
+void PlayerMove(int* playerX, int* playerY)
+{
+	// windows.h kbhit()
+	// 입력받은 코드를 PlayerMove() -> main함수에서 값이 변경되는 것을 받도록 만들어라.
+	// 조건문만 만들어 주면 언제 X의 값이 바뀔지
+	*playerX = *playerX + 1;
+
+	// scanf
+	// 'w'   -> Y -1
+	// 's'   -> Y +1
+	// 'a'   -> X -1
+	// 'd'   -> X +1
+
 
 }

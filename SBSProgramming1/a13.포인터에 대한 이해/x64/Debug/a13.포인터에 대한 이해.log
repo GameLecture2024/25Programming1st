@@ -1,0 +1,5 @@
+﻿  13_main.c
+C:\Users\Administrator\Desktop\25Programming1st\SBSProgramming1\a13.포인터에 대한 이해\13_main.c(49,12): warning C4090: '함수': 'const' 한정자가 서로 다릅니다.
+C:\Users\Administrator\Desktop\25Programming1st\SBSProgramming1\a13.포인터에 대한 이해\13_main.c(54,7): warning C4133: '=': 'char *'과(와) 'const double *' 사이의 형식이 호환되지 않습니다.
+C:\Users\Administrator\Desktop\25Programming1st\SBSProgramming1\a13.포인터에 대한 이해\13_main.c(55,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'const double'입니다.
+  a13.포인터에 대한 이해.vcxproj -> C:\Users\Administrator\Desktop\25Programming1st\SBSProgramming1\x64\Debug\a13.포인터에 대한 이해.exe
