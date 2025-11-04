@@ -1,0 +1,4 @@
+﻿  15_main.c
+C:\Users\Administrator\Desktop\25Programming1st\SBSProgramming1\a15.포인터와 배열\15_main.c(27,9): warning C4133: '=': 'float *'과(와) 'int *' 사이의 형식이 호환되지 않습니다.
+C:\Users\Administrator\Desktop\25Programming1st\SBSProgramming1\a15.포인터와 배열\15_main.c(24,8): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+  a15.포인터와 배열.vcxproj -> C:\Users\Administrator\Desktop\25Programming1st\SBSProgramming1\Debug\a15.포인터와 배열.exe
