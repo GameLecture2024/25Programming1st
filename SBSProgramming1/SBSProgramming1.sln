@@ -35,6 +35,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "a15.포인터와 배열", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "a16.구조체와 열거형", "a16.구조체와 열거형\a16.구조체와 열거형.vcxproj", "{B4B09654-54D4-4358-922A-12F5F7DD4E1F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "a17.구조체에 대한 이해", "a17.구조체에 대한 이해\a17.구조체에 대한 이해.vcxproj", "{18AE41DB-9167-43AE-921C-1D41483112A1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "a18.ToyProject01", "a18.ToyProject01\a18.ToyProject01.vcxproj", "{A380B070-C161-4DB1-9D2F-BA63EA61BF68}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -171,6 +175,22 @@ Global
 		{B4B09654-54D4-4358-922A-12F5F7DD4E1F}.Release|x64.Build.0 = Release|x64
 		{B4B09654-54D4-4358-922A-12F5F7DD4E1F}.Release|x86.ActiveCfg = Release|Win32
 		{B4B09654-54D4-4358-922A-12F5F7DD4E1F}.Release|x86.Build.0 = Release|Win32
+		{18AE41DB-9167-43AE-921C-1D41483112A1}.Debug|x64.ActiveCfg = Debug|x64
+		{18AE41DB-9167-43AE-921C-1D41483112A1}.Debug|x64.Build.0 = Debug|x64
+		{18AE41DB-9167-43AE-921C-1D41483112A1}.Debug|x86.ActiveCfg = Debug|Win32
+		{18AE41DB-9167-43AE-921C-1D41483112A1}.Debug|x86.Build.0 = Debug|Win32
+		{18AE41DB-9167-43AE-921C-1D41483112A1}.Release|x64.ActiveCfg = Release|x64
+		{18AE41DB-9167-43AE-921C-1D41483112A1}.Release|x64.Build.0 = Release|x64
+		{18AE41DB-9167-43AE-921C-1D41483112A1}.Release|x86.ActiveCfg = Release|Win32
+		{18AE41DB-9167-43AE-921C-1D41483112A1}.Release|x86.Build.0 = Release|Win32
+		{A380B070-C161-4DB1-9D2F-BA63EA61BF68}.Debug|x64.ActiveCfg = Debug|x64
+		{A380B070-C161-4DB1-9D2F-BA63EA61BF68}.Debug|x64.Build.0 = Debug|x64
+		{A380B070-C161-4DB1-9D2F-BA63EA61BF68}.Debug|x86.ActiveCfg = Debug|Win32
+		{A380B070-C161-4DB1-9D2F-BA63EA61BF68}.Debug|x86.Build.0 = Debug|Win32
+		{A380B070-C161-4DB1-9D2F-BA63EA61BF68}.Release|x64.ActiveCfg = Release|x64
+		{A380B070-C161-4DB1-9D2F-BA63EA61BF68}.Release|x64.Build.0 = Release|x64
+		{A380B070-C161-4DB1-9D2F-BA63EA61BF68}.Release|x86.ActiveCfg = Release|Win32
+		{A380B070-C161-4DB1-9D2F-BA63EA61BF68}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

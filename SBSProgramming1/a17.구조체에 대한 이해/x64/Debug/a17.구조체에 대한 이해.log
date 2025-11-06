@@ -1,0 +1,8 @@
+﻿  17_main.c
+C:\Users\Administrator\Desktop\25Programming1st\SBSProgramming1\a17.구조체에 대한 이해\17_main.c(38,32): warning C4030: 첫째 정식 매개 변수 목록이 둘째 목록보다 깁니다.
+C:\Users\Administrator\Desktop\25Programming1st\SBSProgramming1\a17.구조체에 대한 이해\17_main.c(38,32): warning C4028: 정식 매개 변수 1이(가) 선언과 다릅니다.
+C:\Users\Administrator\Desktop\25Programming1st\SBSProgramming1\a17.구조체에 대한 이해\17_main.c(72,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'size_t'입니다.
+  C:\Users\Administrator\Desktop\25Programming1st\SBSProgramming1\a17.구조체에 대한 이해\17_main.c(72,9):
+  서식 문자열에서 '%zd'을(를) 사용하는 것이 좋습니다.
+  
+  a17.구조체에 대한 이해.vcxproj -> C:\Users\Administrator\Desktop\25Programming1st\SBSProgramming1\x64\Debug\a17.구조체에 대한 이해.exe
